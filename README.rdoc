@@ -1,28 +1,25 @@
-== README
+==
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Small description on using **bootstrap3-datetimepicker-rails** gem.
 
-Things you may want to cover:
+1. Gemfile:
+```ruby
+gem 'twitter-bootstrap-rails'
+gem 'momentjs-rails', '>= 2.9.0'
+gem 'bootstrap3-datetimepicker-rails', '~> 4.14.30'
+```
 
-* Ruby version
+2. In view:
+```
+  <div class='input-group date' id='datetimepicker1'>
+    <input type='text' class="form-control" />
+    <span class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+  </div>
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+3. Javascript:
+```javascript
+$('#datetimepicker1').datetimepicker({viewMode: 'days', format: "DD/MM/YYYY"});
+```
