@@ -16,4 +16,6 @@ gem 'bootstrap3-datetimepicker-rails', '~> 4.14.30'
   </div>
 
 3. Javascript:
-$('#datetimepicker1').datetimepicker({viewMode: 'days', format: "DD/MM/YYYY"});
+```javascript
+  $('#datetimepicker1').datetimepicker({viewMode: 'days', format: "DD/MM/YYYY"});
+```
