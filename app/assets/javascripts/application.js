@@ -16,3 +16,7 @@
 //= require moment
 //= require bootstrap-datetimepicker
 //= require_tree .
+$(function () {
+  $('#datetimepicker1').datetimepicker({viewMode: 'days', format: "DD/MM/YYYY"});
+  $('#datetimepicker2').datetimepicker({format: "HH:mm"});
+});
